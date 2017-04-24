@@ -1,5 +1,5 @@
-/.idea
-/build
-/target
+.idea
+build
+target
 #src/main/resources/
 
