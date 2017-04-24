@@ -18,6 +18,7 @@ import static com.codeborne.selenide.Selectors.*;
 public class SmokeTests extends TestBase {
 
 
+
     /*@Test
     public void test(){
         open("/");
