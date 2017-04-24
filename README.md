@@ -1,6 +1,6 @@
-#Selenide framework example
+# Selenide framework example
  
-  - Before running of the the tests, download chromedriver from this [repository]("https://chromedriver.storage.googleapis.com/index.html?path=2.24/")
+  - Before running of the the tests, download chromedriver (v. 2.24) from this [repository]("https://chromedriver.storage.googleapis.com/index.html?path=2.24/")
   - Place the driver to your root folder(Linux): ``` /drivers/ ```
   
   Test-run instructions:
