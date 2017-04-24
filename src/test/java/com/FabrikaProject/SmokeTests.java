@@ -1,25 +1,35 @@
+package com.FabrikaProject;
+
 import com.FabrikaProject.DataProviders.RegistrationData;
+import com.FabrikaProject.Utilites.Listeners.TestListener;
+import com.FabrikaProject.Utilites.Listeners.TextReport;
+import com.FabrikaProject.Utilites.Listeners.TextReportAllure;
 import com.FabrikaProject.Utilites.TestBase;
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.testng.BrowserPerClass;
-import com.codeborne.selenide.testng.BrowserPerTest;
 import com.codeborne.selenide.testng.ScreenShooter;
 import org.testng.annotations.*;
 import ru.yandex.qatools.allure.annotations.Description;
 import ru.yandex.qatools.allure.annotations.Title;
 
-import static com.codeborne.selenide.Condition.*;
+
 import static com.codeborne.selenide.Selenide.*;
+
 import static com.codeborne.selenide.Selectors.*;
+import static com.codeborne.selenide.Condition.*;
 
 @Title("Smoke tests")
 @Description("Tests of main website functionality")
-@Listeners({ScreenShooter.class, BrowserPerClass.class})
+@Listeners({ScreenShooter.class,
+        BrowserPerClass.class,
+        TextReport.class,
+        TextReportAllure.class,
+        TestListener.class})
 public class SmokeTests extends TestBase {
 
 
-
-    /*@Test
+    @Title("Positive login")
+    @Description("Description")
+    @Test
     public void test(){
         open("/");
         $(byText("Login")).click();
@@ -29,7 +39,7 @@ public class SmokeTests extends TestBase {
         $(byId("button")).shouldHave(text("Profile"));
         $(byClassName("flash")).shouldHave(text("Welcome to Selenium course, Savva!" + "\n" + "×"));
 
-    }*/
+    }
 
 
     @Title("Positive registration")
@@ -52,6 +62,7 @@ public class SmokeTests extends TestBase {
         registrationPage.errorMessageField.shouldBe(visible).shouldHave(text(errorMessage));
         registrationPage.errorMessageField.shouldHave(attribute("id", errorId));
     }
+
 
     @Title("Profile deleting")
     @Description("Description")
@@ -139,8 +150,6 @@ public class SmokeTests extends TestBase {
         contactsTable.shouldHaveContactName(0, "Andrew").shouldHaveLink(0, "skype:andrii.sylchuk?call");
         contactsTable.shouldHaveContactName(1, "Dmitry").shouldHaveLink(1, "skype:vlay19881?call");
     }
-
-
 
 
 }

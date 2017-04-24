@@ -53,7 +53,7 @@ public class HomePage {
     public HomePage deletePost(int index){
         getPost(index).$(byXpath("//td[3]/a[2]")).click();
         confirm();
-
+        //switchTo().alert().accept();
         /*posts.last().$(byXpath("//td[1]")).shouldHave(Condition.text(text)).
                 $(byXpath("//td[3]/a[2]/..")).click();*/
         /*posts.get(index).$(byXpath("//td[3]/a[2]")).click();
