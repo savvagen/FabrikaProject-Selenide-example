@@ -7,6 +7,7 @@ import com.FabrikaProject.Utilites.Listeners.TextReportAllure;
 import com.FabrikaProject.Utilites.TestBase;
 import com.codeborne.selenide.testng.BrowserPerClass;
 import com.codeborne.selenide.testng.ScreenShooter;
+import org.apache.log4j.Logger;
 import org.testng.annotations.*;
 import ru.yandex.qatools.allure.annotations.Description;
 import ru.yandex.qatools.allure.annotations.Title;
@@ -27,6 +28,8 @@ import static com.codeborne.selenide.Condition.*;
 public class SmokeTests extends TestBase {
 
 
+
+
     @Title("Positive login")
     @Description("Description")
     @Test
@@ -38,7 +41,6 @@ public class SmokeTests extends TestBase {
         $(byText("Logout")).shouldBe(visible);
         $(byId("button")).shouldHave(text("Profile"));
         $(byClassName("flash")).shouldHave(text("Welcome to Selenium course, Savva!" + "\n" + "×"));
-
     }
 
 

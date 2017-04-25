@@ -40,7 +40,9 @@ public class TestBase {
         //startMaximized = false;
         browserSize = "1366x768";
         baseUrl = "http://vlay.pythonanywhere.com/test_1";
+
         addListener(new EventListener());
+
         profilePage = new ProfilePage();
         loginPage = new LoginPage();
         homePage = new HomePage();
