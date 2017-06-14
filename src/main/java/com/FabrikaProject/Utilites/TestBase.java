@@ -35,7 +35,7 @@ public class TestBase {
     @BeforeClass
     public void setUp(){
         timeout = 10000;
-        System.setProperty("webdriver.chrome.driver", "/drivers/chromedriver");
+        //System.setProperty("webdriver.chrome.driver", "/drivers/chromedriver");
         browser = "chrome";
         //startMaximized = false;
         browserSize = "1366x768";
