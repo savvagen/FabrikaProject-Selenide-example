@@ -132,16 +132,16 @@
             <artifactId>junit-addons</artifactId>
             <version>1.4</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>log4j-over-slf4j</artifactId>
             <version>1.7.25</version>
-        </dependency>
+        </dependency>-->
         <!--<dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-jdk14</artifactId>
             <version>1.7.24</version>
-            <exclusions>
+            &lt;!&ndash;<exclusions>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
                     <artifactId>slf4j-nop</artifactId>
@@ -158,7 +158,7 @@
                     <groupId>org.slf4j</groupId>
                     <artifactId>slf4j-api</artifactId>
                 </exclusion>
-            </exclusions>
+            </exclusions>&ndash;&gt;
         </dependency>-->
         <dependency>
             <groupId>org.jsoup</groupId>
