@@ -1,0 +1,9 @@
+language: java
+
+ install: false
+ script:
+  - mvn clean site
+ jdk:
+  - oraclejdk8
+
+

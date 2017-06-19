@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Suite" parallel="tests" thread-count="2">
+
+    <!--<parameter name="browser" value="firefox"/>
+    <parameter name="version" value="46.0"/>-->
+
+    <!--<listeners>
+        <listener class-name="com.Fabrika.AllureListener"/>
+        <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+    </listeners>-->
+
+    <test name="authTests">
+        <!--<parameter name="browser" value="firefox"/>
+        <parameter name="version" value="46.0"/>-->
+        <classes>
+            <class name="com.FabrikaProject.SmokeTests"/>
+            <!--<class name="com.Fabrika.HomePageTests"/>-->
+        </classes>
+    </test>
+
+
+</suite>

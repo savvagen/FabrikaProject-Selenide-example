@@ -248,9 +248,9 @@
                     <includes>
                         <include>*.java</include>
                     </includes>
-                    <!-- <suiteXmlFiles>
+                     <suiteXmlFiles>
                        <suiteXmlFile>src/test/resources/suite.xml</suiteXmlFile>
-                     </suiteXmlFiles>-->
+                     </suiteXmlFiles>
                 </configuration>
                 <dependencies>
                     <dependency>
