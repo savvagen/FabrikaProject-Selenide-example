@@ -10,7 +10,7 @@ import com.FabrikaProject.Utilites.Listeners.EventListener;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
-import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Configuration.*;
 import static com.codeborne.selenide.WebDriverRunner.*;
 
