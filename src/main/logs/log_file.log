@@ -1,0 +1,58 @@
+2017-06-19 15:45:48 INFO  appLogger:22 - "PresContactsLink" test started________
+2017-06-19 15:46:10 INFO  appLogger:39 - Report for PresContactsLink
++--------------------+----------------------------------------------------------------------+----------+----------+
+|Element             |Subject                                                               |Status    |ms.       |
++--------------------+----------------------------------------------------------------------+----------+----------+
+|open                |http://vlay.pythonanywhere.com/test_1/default/index                   |PASS      |20176     |
+|By.xpath: //*/a[@href='/test_1/default/contact']|click()                                                               |PASS      |1250      |
+|table tbody tr      |should have(size(2))                                                  |PASS      |243       |
+|table tbody tr[0]   |$(td h2)                                                              |PASS      |0         |
+|td h2               |should have(text 'Andrew')                                            |PASS      |313       |
+|table tbody tr[0]   |$(td a)                                                               |PASS      |0         |
+|td a                |should have(attribute href=skype:andrii.sylchuk?call)                 |PASS      |52        |
+|table tbody tr[1]   |$(td h2)                                                              |PASS      |0         |
+|td h2               |should have(text 'Dmitry')                                            |PASS      |301       |
+|table tbody tr[1]   |$(td a)                                                               |PASS      |0         |
+|td a                |should have(attribute href=skype:vlay19881?call)                      |PASS      |53        |
++--------------------+----------------------------------------------------------------------+----------+----------+
+
+2017-06-19 15:46:11 INFO  appLogger:35 - "PresContactsLink" test finished with success________
+2017-06-19 15:46:11 INFO  appLogger:22 - "pressAboutLink" test started________
+2017-06-19 15:46:13 INFO  appLogger:39 - Report for pressAboutLink
++--------------------+----------------------------------------------------------------------+----------+----------+
+|Element             |Subject                                                               |Status    |ms.       |
++--------------------+----------------------------------------------------------------------+----------+----------+
+|open                |http://vlay.pythonanywhere.com/test_1/default/index                   |PASS      |458       |
+|By.xpath: //*/a[@href='/test_1/default/about']|click()                                                               |PASS      |772       |
+|By.xpath: //*/section[@id='main']/h1|should be(visible)                                                    |PASS      |60        |
+|By.xpath: //*/section[@id='main']/h1|should have(text 'Описание курса:')                                   |PASS      |41        |
+|By.xpath: //*/section[@id='main']/p|should be(visible)                                                    |PASS      |40        |
+|By.xpath: //*/section[@id='main']/p|should have(text 'В курсе рассматриваются основные теоретические и практические моменты автоматизации тестирования программного обеспечения: отличие мануального тестирования от автоматического, когда стоит применять автоматическое тестирование, основные инструменты автоматизации (Selenium, QTP и другие), репортинг, разработка автоматических тестов, анализ автоматических тестов, написание скриптов для включения в автоматические тесты и так далее. После каждой теоретической части проводится практическое занятие, позволяющее закрепить полученные знания. Курс ориентирован на развитие у слушателей навыков автоматизации тестирования программного обеспечения, понимания инструментов автоматизации, прогнозирование возможных проблем, репортинг и анализ результатов.')|PASS      |42        |
++--------------------+----------------------------------------------------------------------+----------+----------+
+
+2017-06-19 15:46:13 INFO  appLogger:35 - "pressAboutLink" test finished with success________
+2017-06-19 15:46:13 INFO  appLogger:22 - "pressDescriptionButton" test started________
+2017-06-19 15:46:14 INFO  appLogger:39 - Report for pressDescriptionButton
++--------------------+----------------------------------------------------------------------+----------+----------+
+|Element             |Subject                                                               |Status    |ms.       |
++--------------------+----------------------------------------------------------------------+----------+----------+
+|open                |http://vlay.pythonanywhere.com/test_1/default/index                   |PASS      |618       |
+|By.linkText: Description|click()                                                               |PASS      |1037      |
+|By.tagName: h2      |should be(visible)                                                    |PASS      |51        |
+|By.tagName: h2      |should have(text 'Для чего нам это???')                               |PASS      |38        |
++--------------------+----------------------------------------------------------------------+----------+----------+
+
+2017-06-19 15:46:15 INFO  appLogger:35 - "pressDescriptionButton" test finished with success________
+2017-06-19 15:46:15 INFO  appLogger:22 - "pressTermsLink" test started________
+2017-06-19 15:46:16 INFO  appLogger:39 - Report for pressTermsLink
++--------------------+----------------------------------------------------------------------+----------+----------+
+|Element             |Subject                                                               |Status    |ms.       |
++--------------------+----------------------------------------------------------------------+----------+----------+
+|open                |http://vlay.pythonanywhere.com/test_1/default/index                   |PASS      |396       |
+|By.xpath: //*/a[@href='/test_1/default/terms']|click()                                                               |PASS      |909       |
+|By.tagName: h2      |should be(visible)                                                    |PASS      |35        |
+|By.tagName: h2      |should have(text 'Длительность курса ~ 26 пар по 2 часа. 3 месяца на курс.')|PASS      |44        |
++--------------------+----------------------------------------------------------------------+----------+----------+
+
+2017-06-19 15:46:16 INFO  appLogger:35 - "pressTermsLink" test finished with success________
+2017-06-19 15:46:16 INFO  appLogger:22 - "test" test started________
