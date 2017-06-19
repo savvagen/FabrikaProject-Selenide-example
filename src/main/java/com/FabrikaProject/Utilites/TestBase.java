@@ -7,12 +7,15 @@ import com.FabrikaProject.Pages.ContactsPage.ContactsTable;
 import com.FabrikaProject.Pages.HomePage.HomePage;
 import com.FabrikaProject.Pages.HomePage.PostTable;
 import com.FabrikaProject.Utilites.Listeners.EventListener;
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.WebDriverRunner;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
-import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Configuration.*;
-import static com.codeborne.selenide.WebDriverRunner.*;
+
+
+
 
 public class TestBase {
 
@@ -33,11 +36,12 @@ public class TestBase {
 
     @BeforeClass
     public void setUp(){
-        timeout = 10000;
-        browser = "chrome";
-        browserSize = "1366x768";
-        baseUrl = "http://vlay.pythonanywhere.com/test_1";
-        addListener(new EventListener());
+        Configuration.timeout = 10000;
+
+        Configuration.browser = "chrome";
+        Configuration.browserSize = "1366x768";
+        Configuration.baseUrl = "http://vlay.pythonanywhere.com/test_1";
+        WebDriverRunner.addListener(new EventListener());
         profilePage = new ProfilePage();
         loginPage = new LoginPage();
         homePage = new HomePage();
@@ -56,9 +60,9 @@ public class TestBase {
 
     @AfterMethod
     public void tearDown(){
-        if (homePage.logoutButton.is(visible)){
-            homePage.logoutButton.shouldBe(visible).click();
-            homePage.loginButton.shouldBe(visible);
+        if (homePage.logoutButton.is(Condition.visible)){
+            homePage.logoutButton.shouldBe(Condition.visible).click();
+            homePage.loginButton.shouldBe(Condition.visible);
         }
     }
 
