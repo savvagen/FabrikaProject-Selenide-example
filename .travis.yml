@@ -1,6 +1,8 @@
 language: java
 script: mvn clean site
 os: windows
+jdk:
+  - oraclejdk8
 
 
 
