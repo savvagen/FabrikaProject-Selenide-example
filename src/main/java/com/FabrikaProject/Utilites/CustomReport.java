@@ -5,7 +5,6 @@ import com.codeborne.selenide.logevents.LogEvent;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import com.codeborne.selenide.logevents.SimpleReport;
 import com.google.common.base.Joiner;
-import com.sun.glass.ui.EventLoop;
 import org.apache.log4j.Logger;
 
 import java.util.Collections;

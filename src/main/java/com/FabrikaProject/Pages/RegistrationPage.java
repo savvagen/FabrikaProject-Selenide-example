@@ -1,9 +1,7 @@
 package com.FabrikaProject.Pages;
 
 
-import com.FabrikaProject.Pages.HomePage.HomePage;
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
+
 import com.codeborne.selenide.SelenideElement;
 
 

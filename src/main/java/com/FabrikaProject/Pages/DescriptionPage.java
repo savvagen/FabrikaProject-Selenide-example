@@ -1,14 +1,12 @@
 package com.FabrikaProject.Pages;
 
-import com.codeborne.selenide.Condition;
+
 import com.codeborne.selenide.SelenideElement;
-import org.bouncycastle.jcajce.provider.symmetric.DES;
 import org.openqa.selenium.By;
 
-
-import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.Configuration.*;
+import static com.codeborne.selenide.Configuration.baseUrl;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class DescriptionPage {
 
