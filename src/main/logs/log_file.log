@@ -56,3 +56,23 @@
 
 2017-06-19 15:46:16 INFO  appLogger:35 - "pressTermsLink" test finished with success________
 2017-06-19 15:46:16 INFO  appLogger:22 - "test" test started________
+2017-06-19 17:32:05 INFO  appLogger:22 - "PresContactsLink" test started________
+2017-06-19 17:32:15 INFO  appLogger:39 - Report for PresContactsLink
++--------------------+----------------------------------------------------------------------+----------+----------+
+|Element             |Subject                                                               |Status    |ms.       |
++--------------------+----------------------------------------------------------------------+----------+----------+
+|open                |http://vlay.pythonanywhere.com/test_1/default/index                   |PASS      |7806      |
+|By.xpath: //*/a[@href='/test_1/default/contact']|click()                                                               |PASS      |910       |
+|table tbody tr      |should have(size(2))                                                  |PASS      |266       |
+|table tbody tr[0]   |$(td h2)                                                              |PASS      |0         |
+|td h2               |should have(text 'Andrew')                                            |PASS      |357       |
+|table tbody tr[0]   |$(td a)                                                               |PASS      |0         |
+|td a                |should have(attribute href=skype:andrii.sylchuk?call)                 |PASS      |51        |
+|table tbody tr[1]   |$(td h2)                                                              |PASS      |0         |
+|td h2               |should have(text 'Dmitry')                                            |PASS      |338       |
+|table tbody tr[1]   |$(td a)                                                               |PASS      |0         |
+|td a                |should have(attribute href=skype:vlay19881?call)                      |PASS      |53        |
++--------------------+----------------------------------------------------------------------+----------+----------+
+
+2017-06-19 17:32:15 INFO  appLogger:35 - "PresContactsLink" test finished with success________
+2017-06-19 17:32:15 INFO  appLogger:22 - "pressAboutLink" test started________
